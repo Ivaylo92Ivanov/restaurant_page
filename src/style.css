@@ -1,20 +1,55 @@
+@font-face {
+    font-family: "dancing-script";
+    src: url("./DancingScript-VariableFont_wght.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "dancing-script";
 }
 
 :root {
-    --main-color-1: #164e63
+    --main-color-1: #fef3c7;
 }
 
 body {
     display: grid;
-    grid-template-rows: 1fr 4fr 1fr;
-    height: 100vh;
+    grid-template-rows: 1fr 5fr 1fr;
+    min-height: 100vh;
+    background-image: url("./restaurant-background-min.jpg");
+    background-size: cover;
 }
 
 .header {
     box-shadow: 2px 2px 12px;
+    font-family: "dancing-script";
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+    margin: 0 10%;
+}
+
+nav > button {
+    background: none;
+    font-size: 2rem;
+    border: none;
+    border: 2px solid transparent;
+}
+
+nav > button.clicked {
+    border-bottom: 2px solid black;
+}
+
+nav > button:hover {
+    transform: translateY(-10%);
+    /*  */
 }
 
 .footer{
@@ -24,14 +59,21 @@ body {
 .header,
 .footer{
     z-index: 1;
-    background-color: var(--main-color-1, lightblue);
+    background-color: rgb(254, 243, 199, 0.6);
+    
 }
 
 .main {
     padding-top: 1rem;
-    background-image: url("./restaurant-background.jpg");
-    background-size: cover;
-    
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.menu {
+    min-height: 80%;
+    min-width: 50%;
+    background-color: rgb(254, 243, 199, 0.6);
+    
+}
+
