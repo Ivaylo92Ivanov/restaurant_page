@@ -1,8 +1,13 @@
 import "./style.css";
-import restaurantBackground from "./restaurant-background-min.jpg"
+import About from "./about.js"
+import Contact from "./contact.js"
+import Menu from "./menu.js"
 
-document.querySelector("").style.backgroundImage = `url(${restaurantBackground})`
-// document.querySelector(".main").style.backgroundColor = "black"
+
+document.querySelector(".about-button").addEventListener("click", () => About())
+document.querySelector(".contact-button").addEventListener("click", () => Contact())
+document.querySelector(".menu-button").addEventListener("click", () => Menu())
+// Contact();
 
 
 console.log("whatever..")
