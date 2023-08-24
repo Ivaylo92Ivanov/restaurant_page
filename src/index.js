@@ -3,11 +3,27 @@ import About from "./about.js"
 import Contact from "./contact.js"
 import Menu from "./menu.js"
 
+About();
 
-document.querySelector(".about-button").addEventListener("click", () => About())
-document.querySelector(".contact-button").addEventListener("click", () => Contact())
-document.querySelector(".menu-button").addEventListener("click", () => Menu())
-// Contact();
+function underlineClickedButton (buttonClass) {
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => button.classList.remove("clicked"));
 
+    let currentButton = document.querySelector(`.${buttonClass}-button`);
+    currentButton.classList.add("clicked");
+}
 
-console.log("whatever..")
+document.querySelector(".about-button").addEventListener("click", () => {
+    About();
+    underlineClickedButton("about");
+});
+
+document.querySelector(".contact-button").addEventListener("click", () => {
+    Contact();
+    underlineClickedButton("contact");
+});
+
+document.querySelector(".menu-button").addEventListener("click", () => {
+    Menu();
+    underlineClickedButton("menu");
+});

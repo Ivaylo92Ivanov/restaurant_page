@@ -47,7 +47,6 @@ nav > button.clicked {
 
 nav > button:hover {
     transform: translateY(-10%);
-    /*  */
 }
 
 .footer{
@@ -62,10 +61,15 @@ nav > button:hover {
 .footer{
     z-index: 1;
     background-color: rgb(254, 243, 199, 0.6);
-    
 }
 
-.main {
+.footer {
+    display: flex;
+    gap: 2rem;
+    /* flex-direction: column; */
+}
+
+.content {
     padding-top: 1rem;
     display: flex;
     align-items: center;
@@ -81,6 +85,22 @@ nav > button:hover {
     align-items: center;
     justify-content: center;    
     text-align: center;
+}
+
+.taster {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin: 2rem 0;
+}
+
+.about {
+
+}
+
+.contact {
+
 }
 
 h1 {
