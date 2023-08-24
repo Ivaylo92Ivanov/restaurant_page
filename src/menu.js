@@ -17,7 +17,8 @@ export default function Menu() {
         <li>Large: $6,99</li>\
         <li>Medium: $5,99</li>\
         <li>Small: $4,99</li>\
-    </ul></div>';
+    </ul>\
+    </div>';
     menuSection.appendChild(gyroMenuItem)
 
     const cornedBeefMenuItem = document.createElement("div");
@@ -43,7 +44,8 @@ export default function Menu() {
         <li>Large: $4,99</li>\
         <li>Medium: $3,99</li>\
         <li>Small: $2,99</li>\
-    </ul></div>'
+    </ul>\
+    </div>'
     menuSection.appendChild(friesMenuItem)
 
     const sodaMenuItem = document.createElement("div");
@@ -55,7 +57,8 @@ export default function Menu() {
     <ul>\
         <li>Large: $4,99</li>\
         <li>Small: $3,99</li>\
-    </ul></div>'
+    </ul>\
+    </div>'
     menuSection.appendChild(sodaMenuItem)
 
     content.appendChild(menuSection)
