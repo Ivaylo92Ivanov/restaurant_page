@@ -3,7 +3,8 @@ import About from "./about.js"
 import Contact from "./contact.js"
 import Menu from "./menu.js"
 
-About();
+// About();
+Menu();
 
 function underlineClickedButton (buttonClass) {
     const buttons = document.querySelectorAll("button");

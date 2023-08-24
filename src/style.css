@@ -15,9 +15,9 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 5fr 0.5fr;
+    grid-template-rows: 150px 700px 100px;
     min-height: 100vh;
-    background-image: url("./restaurant-background-min.jpg");
+    background-image: url("./images/restaurant-background-min.jpg");
     background-size: cover;
 }
 
@@ -66,20 +66,23 @@ nav > button:hover {
 .footer {
     display: flex;
     gap: 2rem;
-    /* flex-direction: column; */
 }
 
 .content {
-    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.menu {
-    min-height: 80%;
-    min-width: 50%;
+.menu,
+.about,
+.contact {
+    height: 500px;
+    width: 800px;
     background-color: rgb(254, 243, 199, 0.6);
+}
+
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,15 +98,33 @@ nav > button:hover {
     margin: 2rem 0;
 }
 
-.about {
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+}
 
+.menu-item {
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    transition: 0.5s;
+}
+   
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item > img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    
 }
 
 .contact {
 
-}
-
-h1 {
-    
 }
 
