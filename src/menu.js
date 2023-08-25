@@ -5,7 +5,14 @@ export default function Menu() {
 
     const menuSection = document.createElement("div");
     menuSection.className = "menu";
-    menuSection
+
+    const menuSectionHeader = document.createElement("h1");
+    menuSectionHeader.className = "menu-header"
+    menuSectionHeader.innerHTML = "Check out our menu!";
+    menuSection.appendChild(menuSectionHeader);
+
+    const menuHolder = document.createElement("div");
+    menuHolder.className = "menu-holder";
 
     const gyroMenuItem = document.createElement("div");
     gyroMenuItem.className = "menu-item";
@@ -19,7 +26,7 @@ export default function Menu() {
         <li>Small: $4,99</li>\
     </ul>\
     </div>';
-    menuSection.appendChild(gyroMenuItem)
+    menuHolder.appendChild(gyroMenuItem);
 
     const cornedBeefMenuItem = document.createElement("div");
     cornedBeefMenuItem.className = "menu-item";
@@ -32,7 +39,7 @@ export default function Menu() {
     <li>Both feet long: $8,99</li>\
     </ul>\
     </div>';
-    menuSection.appendChild(cornedBeefMenuItem);
+    menuHolder.appendChild(cornedBeefMenuItem);
 
     const friesMenuItem = document.createElement("div");
     friesMenuItem.className = "menu-item";
@@ -45,11 +52,11 @@ export default function Menu() {
         <li>Medium: $3,99</li>\
         <li>Small: $2,99</li>\
     </ul>\
-    </div>'
-    menuSection.appendChild(friesMenuItem)
+    </div>';
+    menuHolder.appendChild(friesMenuItem);
 
     const sodaMenuItem = document.createElement("div");
-    sodaMenuItem.classList = "menu-item"
+    sodaMenuItem.classList = "menu-item";
     sodaMenuItem.innerHTML = '<img src="../src/images/soda.jpeg" alt="side of fries">\
     <div>\
     <h1>Soda of choice!</h1>\
@@ -58,8 +65,9 @@ export default function Menu() {
         <li>Large: $4,99</li>\
         <li>Small: $3,99</li>\
     </ul>\
-    </div>'
-    menuSection.appendChild(sodaMenuItem)
+    </div>';
+    menuHolder.appendChild(sodaMenuItem);
 
-    content.appendChild(menuSection)
+    menuSection.appendChild(menuHolder);
+    content.appendChild(menuSection);
 };
