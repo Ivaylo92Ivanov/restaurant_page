@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 5rem;
     min-height: 100vh;
     background-image: url("./images/restaurant-background-min.jpg");
     background-size: cover;
